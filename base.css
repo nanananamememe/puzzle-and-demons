@@ -1,0 +1,140 @@
+body, table, td {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+}
+table.frame {
+    table-layout: fixed;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+table.frame tr td ,
+table.frame tr td div ,
+.periphery .bubbles > div ,
+.periphery .bubbles > div .circle {
+    width: 40px;
+    height: 40px;
+}
+table.frame tr td div {
+    margin: 0 2px 2px 0;
+}
+
+.periphery {
+    position: relative;
+    margin: 20px auto;
+}
+
+/* バブルの色等 */
+.periphery .bubble {
+    cursor: pointer;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: transparent;
+}
+.periphery .bubble ,
+.periphery .bubble .circle {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.periphery .bubble.clr0 ,
+.periphery .bubble.clr0 .circle {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.bubble.clr0 .circle {
+    background-color: pink;
+}
+.bubble.clr1 .circle {
+    background-color: #82358C;
+}
+.bubble.clr2 .circle {
+    background-color: #068644;
+}
+.bubble.clr3 .circle {
+    background-color: #FFED6B;
+}
+.bubble.clr4 .circle {
+    background-color: #A8C2E6;
+}
+.bubble.clr5 .circle {
+    background-color: #DF2620;
+}
+
+
+/* ドラッグ中の影等 */
+.periphery .bubble.draggable {
+    z-index: 1;
+    background-color: rgba(0,0,0,0.3);
+}
+.periphery .bubble.draggable .circle {
+    top: -5px;
+    left: 5px;
+}
+
+
+/* タイマー */
+.periphery .bubble .progressBarWrap ,
+.periphery .bubble .progressBarWrap .progressBar {
+    width: 200px;
+    height: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.periphery .bubble .progressBarWrap {
+    border: 1px solid #0f0;
+}
+.periphery .bubble .progressBarWrap .progressBar {
+    background-color: #00f;
+}
+
+/* コンボ */
+.comboBoard {
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.comboBoard div {
+    white-space: nowrap;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.comboBoard div.max {
+    color: #f00;
+}
+.comboBoard div.now {
+    color: #00f;
+}
+.comboBoard table th ,
+.comboBoard table td {
+    text-align: center;
+    font-weight: bold;
+}
+.comboBoard table .clr0 {
+    color: #F43387;
+}
+.comboBoard table .clr1 {
+    color: #82358C;
+}
+.comboBoard table .clr2 {
+    color: #068644;
+}
+.comboBoard table .clr3 {
+    color: gold;
+}
+.comboBoard table .clr4 {
+    color: #A8C2E6;
+}
+.comboBoard table .clr5 {
+    color: #DF2620;
+}
+
